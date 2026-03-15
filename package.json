@@ -6,13 +6,11 @@
   "scripts": {
     "client:dev": "vite",
     "build": "tsc -b && vite build",
-    "lint": "eslint .",
     "preview": "vite preview",
     "check": "tsc --noEmit",
     "server:dev": "nodemon",
     "dev": "concurrently \"npm run client:dev\" \"npm run server:dev\""
-  },
-  "dependencies": {
+    "dev": "concurrently \"npm run client:dev\" \"npm run server:dev\""
     "cheerio": "^1.2.0",
     "clsx": "^2.1.1",
     "cors": "^2.8.5",
